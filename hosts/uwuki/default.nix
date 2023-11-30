@@ -8,7 +8,7 @@
   };
 
   network = {
-    hostname = "uwuki";
+    hostName = "uwuki";
     networkmanager.enable = true;
   };
 
@@ -17,13 +17,13 @@
   nix.settings = {
     trusted-users = ["rubsad"];
     experimental.features = ["nix-command" "flakes"];
-    auto-optimize-store = true;
+    auto-optimise-store = true;
   };
 
-  time.timezone = "Europe/Helsinki";
+  time.timeZone = "Europe/Helsinki";
 
-  i18.defaultLocale = "en_US.UTF-8";
-  i18.extraLocaleSettings = {
+  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocaleSettings = {
     LC_TIME = "fi_FI.UTF-8";
     LC_PAPER = "fi_FI.UTF-8";
     LC_ADRESS = "fi_FI.UTF-8";
@@ -54,7 +54,7 @@
   users.group.rubsad = {};
 
   users.users.rubsad = {
-    hashedPassword = "";
+    hashedPassword = "$6$ERbtYxGG9UYH8.0j$0Ww2//INdN.DsX1wJu1K.EUikuW/TdFTUyAHHpgtbZrZXqLvi33iG1Id3Na4wR6y6.jaKXQwzGMm8IHVkghM01";
     home = "/home/rubsad";
     isNormalUser = true;
     extraGroups = [
