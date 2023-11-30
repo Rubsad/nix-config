@@ -7,7 +7,7 @@
     systemd-boot.enable = true;
   };
 
-  network = {
+  networking = {
     hostName = "uwuki";
     networkmanager.enable = true;
   };
