@@ -8,7 +8,6 @@
     nixosConfigurations = {
       uwuki = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        nixpkgs = nixpkgs;
         specialArgs = inputs;
         modules = [
           ./hosts/uwuki
