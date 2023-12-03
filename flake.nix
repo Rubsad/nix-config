@@ -5,21 +5,25 @@
     nixpkgs,
     home-manager,
     ...
-  } @ inputs: {
-    nixosConfigurations = {
-      uwuki = nixpkgs.lib.nixosSystem {
+  } @ inputs: let
+    nixosSystem = import ./lib/nixosSystem.nix;
+
+    uwuki-modules = {
+      nixos-modules = [
+        ./hosts/uwuki
+      ];
+      home-module = import ./home/uwuki.nix;
+    };
+  in {
+    nixosConfigurations = let
+      base-args = {
+        inherit home-manager;
+        nixpkgs = nixpkgs;
         system = "x86_64-linux";
         specialArgs = inputs;
-        modules = [
-          ./hosts/uwuki
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.rubsad = import ./home/uwuki.nix;
-          }
-        ];
       };
+    in {
+      uwuki = nixosSystem ( uwuki-modules // base-args );
     };
   };
 
