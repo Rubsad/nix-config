@@ -16,7 +16,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.rubsad = import ./home/uwuki.nix
+            home-manager.users.rubsad = import ./home/uwuki.nix;
           }
         ];
       };
