@@ -24,7 +24,7 @@
 
   security.rtkit.enable = true;
 
-  services = [
+  services = {
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -33,7 +33,7 @@
       pulse.enable = true;
       wireplumber.enable = true;
     };
-  ];
+  };
 
   xdg.portal = {
     enable = true;
