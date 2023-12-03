@@ -16,19 +16,19 @@
   fileSystems."/" =
     { device = "/dev/disk/by-label/nixos";
       fsType = "btrfs";
-      options = [ "subvol=root" "noatime" "compress=zstd" "discard=async" "ssd" ];
+      options = [ "subvol=root" ];
     };
 
   fileSystems."/home" =
     { device = "/dev/disk/by-label/nixos";
       fsType = "btrfs";
-      options = [ "subvol=home" "noatime" "compress=zstd" "discard=async" "ssd" ];
+      options = [ "subvol=home" ];
     };
 
   fileSystems."/nix" =
     { device = "/dev/disk/by-label/nixos";
       fsType = "btrfs";
-      options = [ "subvol=nix" "noatime" "compress=zstd" "discard=async" "ssd" ];
+      options = [ "subvol=nix" ];
     };
 
   fileSystems."/boot" =
