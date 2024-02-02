@@ -7,6 +7,15 @@
     ../modules/nixos/users.nix
   ];
 
+  boot.extraModprobeConfig = ''
+  boot.blacklistedKernelModules = ["nouveau"];
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  services.xserver.videoDrivers = [ "amdgpu" ];
+  services.xserver.enable = true;
+  blacklist nouveau
+  options nouveau modeset=0
+  '';
+
   fileSystems = {
     "/".options = ["discard=async" "compress=zstd"];
     "/home".options = ["discard=async" "compress=zstd"];

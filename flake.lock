@@ -135,22 +135,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-alsa": {
-      "locked": {
-        "lastModified": 1706718339,
-        "narHash": "sha256-S+S97c/HzkO2A/YsU7ZmNF9w2s7Xk6P8dzmfDdckzLs=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "6cac1dec78a3adb1629ae7f5124aa4e46953ba1e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-23.11",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1706732774,
@@ -172,7 +156,6 @@
         "home-manager": "home-manager",
         "hyprsome": "hyprsome",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-alsa": "nixpkgs-alsa",
         "nixpkgs-unstable": "nixpkgs-unstable"
       }
     },
