@@ -1,7 +1,5 @@
 { config, pkgs, ... } @ args:
 {
-  # TODO: Complete configuration
-
   imports = [
     ./hardware-configuration.nix
     ../../modules/nixos/shell.nix

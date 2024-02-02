@@ -28,7 +28,7 @@ in
       Type = "exec";
       ExecStart = "${pkgs.eww-wayland}/bin/eww daemon --no-daemonize";
       Restart = "on-failure";
-      Environment = "\"PATH=${with pkgs; lib.makeBinPath [systemd scripts.ode-toggle-widget bash hyprland eww-wayland]}\"";
+      Environment = "\"PATH=${with pkgs; lib.makeBinPath [systemd scripts.rde-toggle-widget bash hyprland eww-wayland]}\"";
     };
     Install = { WantedBy = ["graphical-session.target"]; };
   };

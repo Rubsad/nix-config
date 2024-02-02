@@ -5,8 +5,7 @@
   ];
 
   security.rtkit.enable = true;
-  security.pam.services.swaylock = {};
-  security.pam.services.sddm.enableGnomeKeyring = true;
+  security.pam.services.waylock = {};
 
   services = {
     pipewire = {

@@ -8,12 +8,10 @@
     bitwarden
     authy
     pulsemixer
-    alsa-utils
     nvtop
     nsxiv
     gnome.nautilus
     gnome.sushi
-    discord
     vesktop
     nautilus-open-any-terminal
     pkgs-unstable.vscode-fhs

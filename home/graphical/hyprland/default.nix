@@ -21,7 +21,7 @@ in
     wl-clip-persist
     playerctl
     bc
-    swaylock-effects
+    waylock
     wtype
     scripts.rde-toggle-widget
     scripts.scrsht
@@ -83,9 +83,9 @@ in
   };
 
   xdg.mimeApps = {
-      enable = false;
+      enable = true;
       defaultApplications = {
-          "text/plain" = ["nvim.desktop"];
+          "text/plain" = ["micro.desktop"];
           "x-scheme-handler/http" = ["brave-browser.desktop"];
           "x-scheme-handler/https" = ["brave-browser.desktop"];
           "x-scheme-handler/webcal" = ["brave-browser.desktop"];

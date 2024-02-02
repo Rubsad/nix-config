@@ -82,7 +82,7 @@
 
 (defwidget musicpop []
   (eventbox
-    :onhoverlost "toggleWindow music"
+    :onhoverlost "rde_toggle_widget music"
     :class "bg rounded"
     (box
       (coverart)

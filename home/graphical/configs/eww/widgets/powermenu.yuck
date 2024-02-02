@@ -7,17 +7,17 @@
     :orientation "vertical"
     (button
       :class "powerbutton"
-      :onclick "toggleWindow powermenu && systemctl poweroff"
+      :onclick "rde_toggle_widget powermenu && systemctl poweroff"
       "Shutdown"
     )
     (button
       :class "powerbutton"
-      :onclick "toggleWindow powermenu && systemctl reboot"
+      :onclick "rde_toggle_widget powermenu && systemctl reboot"
       "Reboot"
     )
     (button
       :class "powerbutton"
-      :onclick "toggleWindow powermenu && hyprctl dispatch exit"
+      :onclick "rde_toggle_widget powermenu && hyprctl dispatch exit"
       "Logout"
     )
   )
