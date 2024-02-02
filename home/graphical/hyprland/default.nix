@@ -25,6 +25,7 @@ in
     wtype
     scripts.rde-toggle-widget
     scripts.scrsht
+    emote
     hyprsome.packages.${pkgs.system}.default
   ];
 

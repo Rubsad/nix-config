@@ -1,5 +1,13 @@
 { ... }:
 {
+  services.xcape = {
+    enable = true;
+
+    mapExpression = {
+      Super_L = "Escape";
+    };
+  };
+
   wayland.windowManager.hyprland = {
     settings = {
       input = {
