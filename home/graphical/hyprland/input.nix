@@ -38,9 +38,9 @@
         # Screen Lock
         "$mod, X, exec, waylock -init-color 0x000000 -input-color 0x00ff00 -fail-color 0xff0000"
         # Switch Keyboard Layout
-        "$mod, B, exec, hyprctl switchxkblayout 'dakai-ps/2+usb-keyboard' next && systemctl --user restart xcape"
+        "$mod, space, exec, hyprctl switchxkblayout 'dakai-ps/2+usb-keyboard' next && systemctl --user restart xcape"
         # Scratchpad
-        "$mod, minus, togglespecialworkspace, scratchpad"
+        "$mod SHIFT, return, togglespecialworkspace, scratchpad"
         # Overlay Audio Mixer
         ",XF86Tools, togglespecialworkspace, audiomixer"
         # Overlay Resource Monitor
@@ -58,7 +58,7 @@
         # Overlay 2FA
         "$mod, S, exec, authy"
         # Emote menu
-        "$mod, S, exec, emote"
+        "$mod, period, exec, emote"
 
         ## Music
         # Play/Pause

@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 let
-  scripts = pkgs.callPackage ../../../../pkgs/scripts.nix {};
+  scripts = pkgs.callPackage ../../../pkgs/scripts.nix {};
 in
 {
   # Notifications

@@ -16,7 +16,7 @@
 
     uwuki-modules = {
       nixos-modules = [
-        ./hosts/uwuki
+        ./host
       ];
       home-module = import ./home/uwuki.nix;
     };

@@ -13,8 +13,8 @@
         modules-right = ["hyprland/language" "custom/separator" "clock"];
         "hyprland/workspaces" = {
           persistent-workspaces = {
-            DP-1 = [1 2 3 4 5 6 7 8 9];
-            DP-2 = [11 12 13 14 15 16 17 18 19];
+            DP-4 = [1 2 3 4 5 6 7 8 9];
+            DP-5 = [11 12 13 14 15 16 17 18 19];
           };
           format = "{icon}";
           format-icons = {
@@ -33,7 +33,7 @@
           "format" = "|";
         };
         "hyprland/window" = {};
-        "mpris" = {
+        mpris = {
           player = "spotify";
           interval = 1;
           format = "{artist}: {title} - {position}|{length}";
@@ -44,7 +44,7 @@
         "hyprland/language" = {
           format = {};
           format-fi = "🇫🇮";
-          format-us = "🇺🇸";
+          format-en = "🇺🇸";
         };
         clock = {
           interval = 1;

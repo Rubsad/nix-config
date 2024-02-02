@@ -17,7 +17,7 @@
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
+      efiSysMountPoint = "/boot";
     };
     grub = {
       enable = true;
@@ -51,7 +51,7 @@
     };
   };
 
-  services.glxlr-utility = {
+  services.goxlr-utility = {
     enable = true;
   };
 
