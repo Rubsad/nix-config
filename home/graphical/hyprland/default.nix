@@ -26,6 +26,7 @@ in
     scripts.rde-toggle-widget
     scripts.scrsht
     emote
+    etcher
     hyprsome.packages.${pkgs.system}.default
   ];
 
