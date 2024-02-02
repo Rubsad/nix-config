@@ -1,17 +1,13 @@
-{pkgs, ...}:
+{ username, ... }:
 {
-  imports = [];
-
-  home = {
-    username = "rubsad";
-    homeDirectory = "/home/rubsad";
-
-    packages = with pkgs; [
-      neofetch
-    ];
-
-    stateVersion = "23.11";
-  };
-
-  programs.home-manager.enable = true;
+  imports = [
+    ./base.nix
+    ./environment.nix
+    ./graphical/hyprland
+    ./graphical/apps.nix
+    ./shell/fish.nix
+    ./shell/prompt.nix
+    ./shell/apps.nix
+    ./shell/programming.nix
+  ];
 }

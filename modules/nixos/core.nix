@@ -29,11 +29,37 @@
     };
   };
 
+  services.fstrim.enable = true;
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "monthly";
+    fileSystems = ["/"];
+  };
+
+  environment.shells = with pkgs; [
+    bash
+    fish
+    nushell
+  ];
+
+  programs.fish.enable = true;
+
+  users.defaultUserShell = pkgs.fish;
+
   environment.systemPackages = with pkgs; [
     micro
     curl
     wget
     git
+    ripgrep
+    fd
+    gcc
+    gnumake
+    unzip
+    zip
+    psmisc
+    lshw
+    file
   ];
 
   environment.variables.EDITOR = "micro";

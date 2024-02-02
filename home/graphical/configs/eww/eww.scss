@@ -1,0 +1,89 @@
+* {
+  all: unset;
+  font-family: Nodo Sans;
+}
+
+.bg {
+  background-color: #414a4c;
+}
+
+/*** Music */
+.music_cover_art {
+  background-size: cover;
+  background-position: center;
+  min-width: 170px;
+  min-height: 170px;
+  margin: 15px;
+  margin-right: 0px;
+  border-radius: 12px;
+}
+
+.music_info {
+  margin: 15px;
+}
+
+.music_song_title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+.media_controls {
+  margin-top: 9px;
+  margin-bottom: 7px;
+  font-family: Fira Code Nerd Font;
+  color: #000aff;
+
+  button {
+    font-size: 28px;
+  }
+}
+
+progressbar {
+  trough {
+    min-height: 12px;
+    border-radius: 6px;
+    background-color: #333;
+  }
+
+  progress {
+    min-height: 12px;
+    border-radius: 6px;
+    background-color: #000aff;
+  }
+}
+
+/*** Clock */
+.clock {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+
+/*** Calendar */
+.calendar {
+  padding: 8px;
+
+  &:indeterminate {
+    color: #888;
+  }
+
+  &.highlight {
+    color: #09f;
+  }
+
+  &.button:hover {
+    color: #09f;
+  }
+}
+
+.calendar:selected {
+  background-color: #09f;
+}
+
+/*** Powermenu */
+
+.powerbutton:hover {
+  background-color: #000aff;
+}

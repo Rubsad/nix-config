@@ -1,0 +1,30 @@
+* {
+  all: unset;
+  background-color: #414a4c;
+  font-family: "Noto Sans";
+}
+
+.modules-left {
+  padding-left: 10px;
+}
+
+.modules-right {
+  padding-right: 10px;
+}
+
+#workspaces button {
+  padding: 0px 4px;
+  color: #fff;
+}
+
+#workspaces button.empty {
+  color: #aaa;
+}
+
+#workspaces button.active {
+  color: #000aff;
+}
+
+window.DP-2 {
+  font-size: 17;
+}

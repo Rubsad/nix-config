@@ -1,0 +1,17 @@
+anchor = top
+width = 100%
+height = 24
+horizontal = true
+font-size = 12
+prompt-text = " > "
+font = FireCode Nerd Font
+outline-width = 0
+border-width = 0
+background-color = #414a4c
+min-input-width = 150
+result-spacing = 15
+padding-top = 0
+padding-bottom = 0
+padding-left = 0
+padding-right = 0
+terminal = alacritty -e

@@ -1,27 +1,12 @@
-{ config, lib, pkgs, ...}:
+{ config, lib, pkgs, pkgs-unstable, ...}:
 {
-  environment.shells = with pkgs; [
-    bash
-    fish
-  ];
-
-  programs.fish.enable = true;
-
-  users.defaultUserShell = pkgs.fish;
-
   environment.systemPackages = with pkgs; [
-    psmisc
-    mako
-    polkit-kde-agent
-    (eww.override {
-      withWayland = true;
-    })
-    hyprpaper
-    wofi
-
+    libsForQt5.polkit-kde-agent
   ];
 
   security.rtkit.enable = true;
+  security.pam.services.swaylock = {};
+  security.pam.services.sddm.enableGnomeKeyring = true;
 
   services = {
     pipewire = {
@@ -32,13 +17,16 @@
       pulse.enable = true;
       wireplumber.enable = true;
     };
+
+    blueman.enable = true;
+
+    flatpak.enable = true;
   };
 
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
     ];
   };
 
@@ -69,4 +57,8 @@
     xwayland.enable = true;
   };
 
+  programs.dconf.enable = true;
+  services.udisks2.enable = true;
+  services.gnome.gnome-keyring.enable = true;
+  programs.seahorse.enable = true;
 }
