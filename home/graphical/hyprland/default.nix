@@ -1,6 +1,6 @@
 { pkgs, pkgs-unstable, hyprsome, ... }:
 let
-  scripts = pkgs.callPackage ../../../../pkgs/scripts.nix {};
+  scripts = pkgs.callPackage ../../../pkgs/scripts.nix {};
 in
 {
   imports = [
@@ -26,7 +26,6 @@ in
     scripts.rde-toggle-widget
     scripts.scrsht
     emote
-    etcher
     hyprsome.packages.${pkgs.system}.default
   ];
 
@@ -65,7 +64,7 @@ in
         drop_shadow = true;
         shadow_range = 4;
         shadow_render_power = 3;
-        col.shadow = "rgba(1a1a1aee)";
+        "col.shadow" = "rgba(1a1a1aee)";
       };
 
       animations = {

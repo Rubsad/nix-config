@@ -2,9 +2,9 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/nixos/shell.nix
-    ../../modules/nixos/desktop.nix
-    ../../modules/nixos/users.nix
+    ../modules/nixos/core.nix
+    ../modules/nixos/desktop.nix
+    ../modules/nixos/users.nix
   ];
 
   fileSystems = {
